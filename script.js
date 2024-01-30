@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('message').value = '';
     });
 });
- // benjamin post it storage start
+
 function loadPostIts() {
     var postItContainer = document.getElementById('postItContainer');
     postItContainer.innerHTML = '';
     var postIts = JSON.parse(localStorage.getItem('postIts')) || [];
-     // benjamin post it storage slut
+    
     postIts.forEach(function(message, index) {
         var postIt = document.createElement('div');
         postIt.className = 'postIt';
